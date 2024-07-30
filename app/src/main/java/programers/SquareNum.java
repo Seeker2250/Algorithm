@@ -10,8 +10,10 @@ public class SquareNum {
     }
     public static int solution(int n) {
         int answer = 0;
-        
-        System.out.println(Math.sqrt(n));
+        if(Math.sqrt(n)%1==0)
+         answer = 1;
+        else
+         answer = 2;
         return answer;
     }
     
