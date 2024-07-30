@@ -4,7 +4,7 @@ public class ClothesDiscount {
     public static void main(String[] args) {
        solution(100010); 
     }
-    public static void solution(int price) {
+    public static int solution(int price) {
         int answer = 0;
         double a = price;
         if ((300000 > a) && a >= 100000) {
@@ -19,6 +19,7 @@ public class ClothesDiscount {
           price = (int) Math.floor(a);
         }
     
-        System.out.println(price);
+        answer = price;
+        return answer;
       }
 }
